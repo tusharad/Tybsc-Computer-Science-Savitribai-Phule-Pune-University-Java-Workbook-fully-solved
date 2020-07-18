@@ -1,0 +1,122 @@
+/*
+2.Compile sample program 2. Type the following command and view the bytecodes.
+javap -c MyClass
+*/
+
+tushar@tushar-Aspire-A315-53:~$ javap -c MyClass
+Compiled from "MyClass.java"
+public class MyClass {
+  public MyClass();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #2                  // Field x:I
+       9: return
+
+  public MyClass(int);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iload_1
+       6: putfield      #2                  // Field x:I
+       9: return
+
+  public boolean isNegative();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field x:I
+       4: ifge          9
+       7: iconst_1
+       8: ireturn
+       9: iconst_0
+      10: ireturn
+
+  public boolean isPositive();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field x:I
+       4: ifle          9
+       7: iconst_1
+       8: ireturn
+       9: iconst_0
+      10: ireturn
+
+  public boolean isZero();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field x:I
+       4: ifne          9
+       7: iconst_1
+       8: ireturn
+       9: iconst_0
+      10: ireturn
+
+  public boolean isOdd();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field x:I
+       4: iconst_2
+       5: irem
+       6: ifeq          11
+       9: iconst_1
+      10: ireturn
+      11: iconst_0
+      12: ireturn
+
+  public boolean isEven();
+    Code:
+       0: aload_0
+       1: getfield      #2                  // Field x:I
+       4: iconst_2
+       5: irem
+       6: ifne          11
+       9: iconst_1
+      10: ireturn
+      11: iconst_0
+      12: ireturn
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_5
+       1: istore_1
+       2: new           #3                  // class MyClass
+       5: dup
+       6: iload_1
+       7: invokespecial #4                  // Method "<init>":(I)V
+      10: astore_2
+      11: aload_2
+      12: invokevirtual #5                  // Method isNegative:()Z
+      15: ifeq          26
+      18: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      21: ldc           #7                  // String Number is Negative
+      23: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      26: aload_2
+      27: invokevirtual #9                  // Method isPositive:()Z
+      30: ifeq          41
+      33: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      36: ldc           #10                 // String Number is Positive
+      38: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      41: aload_2
+      42: invokevirtual #11                 // Method isEven:()Z
+      45: ifeq          56
+      48: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      51: ldc           #12                 // String Number is Even
+      53: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      56: aload_2
+      57: invokevirtual #13                 // Method isOdd:()Z
+      60: ifeq          71
+      63: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      66: ldc           #14                 // String Number is Odd
+      68: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      71: aload_2
+      72: invokevirtual #15                 // Method isZero:()Z
+      75: ifeq          86
+      78: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      81: ldc           #16                 // String Number is Zero
+      83: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      86: return
+}
+
