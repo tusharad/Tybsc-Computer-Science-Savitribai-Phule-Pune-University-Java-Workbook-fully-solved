@@ -23,7 +23,7 @@ public class Ex1B1{
     System.out.println("Current Date is "+strDate);
 
     
-     formatter = new SimpleDateFormat("dd/MM/yyyy");
+    formatter = new SimpleDateFormat("dd/MM/yyyy");
     strDate = formatter.format(date);
     System.out.println("Current Date is "+strDate);
 
@@ -33,23 +33,23 @@ public class Ex1B1{
     System.out.println("Current Date is "+strDate);
 
     
-     formatter = new SimpleDateFormat("EEEEEE MMMM dd yyyy");
+    formatter = new SimpleDateFormat("EEEEEE MMMM dd yyyy");
     strDate = formatter.format(date);
     System.out.println("Current Date is "+strDate);
 
     
-     formatter = new SimpleDateFormat("EEE MMMM dd HH:mm:ss z yyyy");
-     strDate = formatter.format(date);
+    formatter = new SimpleDateFormat("EEE MMMM dd HH:mm:ss z yyyy");
+    strDate = formatter.format(date);
     System.out.println("Current Date is "+strDate);
 
     
-     formatter = new SimpleDateFormat("dd/mm/yyyy HH:mm:ss a Z");
-     strDate = formatter.format(date);
+    formatter = new SimpleDateFormat("dd/mm/yyyy HH:mm:ss a Z");
+    strDate = formatter.format(date);
     System.out.println("Current Date is "+strDate);
 
     
-     formatter = new SimpleDateFormat("D");
-     strDate = formatter.format(date);
+    formatter = new SimpleDateFormat("D");
+    strDate = formatter.format(date);
     System.out.println("Current Day of the year "+strDate);
 
     }
