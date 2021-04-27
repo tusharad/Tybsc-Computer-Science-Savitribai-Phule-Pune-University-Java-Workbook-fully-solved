@@ -75,5 +75,6 @@ public class Ex5A2{
 				break;
 			}
 		}
+		in.close();
 	}
 }

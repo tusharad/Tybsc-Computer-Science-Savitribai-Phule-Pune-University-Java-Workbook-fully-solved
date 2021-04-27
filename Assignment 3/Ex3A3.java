@@ -42,6 +42,7 @@ public class Ex3A3{
         break;
 
         }
+        in.close();
     }
 }
 

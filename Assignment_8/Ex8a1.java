@@ -5,6 +5,11 @@ import java.sql.*;
 
 public class Ex8a1 extends JFrame{
 
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
     Ex8a1(){
         //no code
     }

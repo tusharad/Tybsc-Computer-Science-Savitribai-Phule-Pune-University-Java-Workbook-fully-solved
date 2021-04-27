@@ -1,6 +1,4 @@
 package Assignment_8;
-import Assignment_8.Ex8a1;
-
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
