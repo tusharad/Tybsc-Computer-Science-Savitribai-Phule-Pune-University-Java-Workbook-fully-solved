@@ -19,10 +19,6 @@ import java.awt.event.*;
 public class Ex6A3 extends Applet implements MouseMotionListener,MouseListener,KeyListener
 {
 
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
     String msg="";
 
     public void init()

@@ -6,24 +6,20 @@ import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
-class Ex6A1 extends JFrame implements ItemListener {
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
+class Swing1 extends JFrame implements ItemListener {
     JLabel font, style, size;
-    JComboBox<String> fontcb, sizecb;
+    JComboBox fontcb, sizecb;
     JCheckBox bold, italic;
     JTextField t;
     JPanel p1, p2;
 
-    Ex6A1() {
+    Swing1() {
         p1 = new JPanel();
         p2 = new JPanel();
         font = new JLabel("Font");
         style = new JLabel("Style");
 
-        fontcb = new JComboBox<>();
+        fontcb = new JComboBox();
         fontcb.addItem("Arial");
         fontcb.addItem("Sans");
         fontcb.addItem("Monospace");
@@ -32,7 +28,7 @@ class Ex6A1 extends JFrame implements ItemListener {
         size = new JLabel("Size");
         italic = new JCheckBox("Italic");
 
-        sizecb = new JComboBox<>();
+        sizecb = new JComboBox();
         sizecb.addItem("10");
         sizecb.addItem("12");
         sizecb.addItem("16");
@@ -81,6 +77,6 @@ class Ex6A1 extends JFrame implements ItemListener {
     }
 
     public static void main(String args[]) {
-        new Ex6A1();
+        Swing1 f1 = new Swing1();
     }
 }

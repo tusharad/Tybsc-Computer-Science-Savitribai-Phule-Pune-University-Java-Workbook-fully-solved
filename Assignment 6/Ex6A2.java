@@ -6,12 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class Ex6A2 extends JFrame implements ActionListener
+class Swing2 extends JFrame implements ActionListener
 {
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
     JLabel l1,l2,l3;
     JButton b;
     JRadioButton r1,r2,r3;
@@ -22,7 +18,7 @@ class Ex6A2 extends JFrame implements ActionListener
     static int cnt;
     private StringBuffer s1=new StringBuffer();
 
-    Ex6A2()
+    Swing2()
     {
 
         b1=new ButtonGroup();
@@ -140,7 +136,7 @@ class Ex6A2 extends JFrame implements ActionListener
 
     public static void main(String arg[])
     {
-        new Ex6A2();
+        Swing2 s=new Swing2();
 
     }
 }

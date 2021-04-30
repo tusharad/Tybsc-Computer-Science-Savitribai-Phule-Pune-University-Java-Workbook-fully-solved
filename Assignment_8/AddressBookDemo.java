@@ -1,3 +1,9 @@
+/*
+Design a following Phone Book Application Screen using swing & write a code for
+various operations like Delete, Update, Next, Previous. Raise an appropriate
+exception if invalid data is entered like name left blank and negative phone Number.
+
+*/
 package Assignment_8;
 
 import java.awt.Container;

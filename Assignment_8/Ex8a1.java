@@ -1,14 +1,15 @@
+/*
+1. Create a student table with fields roll number, name, percentage. Insert values in the
+table. Display all the details of the student table in a tabular format on the screen (using
+swing).
+
+*/
 package Assignment_8;
 
 import javax.swing.*;
 import java.sql.*;
 
 public class Ex8a1 extends JFrame{
-
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
 
     Ex8a1(){
         //no code
@@ -63,4 +64,3 @@ public class Ex8a1 extends JFrame{
         new Ex8a1(data);
 }
 }
-

@@ -1,4 +1,10 @@
+/*
+3. Write a program to display information about all columns in the student table. (Use
+ResultSetMetaData).
+
+*/
 package Assignment_8;
+import Assignment_8.Ex8a1;
 
 import java.sql.*;
 

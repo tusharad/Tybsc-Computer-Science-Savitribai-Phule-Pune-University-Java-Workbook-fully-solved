@@ -1,3 +1,11 @@
+/*
+1. Create a java application to store city names and their STD codes using an appropriate
+collection. The GUI ahould allow the following operations:
+i. Add a new city and its code (No duplicates)
+ii. Remove a city from the collection
+iii. Search for a cityname and display the code
+
+*/
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

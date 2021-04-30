@@ -1,3 +1,10 @@
+/*
+2.Write a menu driven program to perform the following operations on a text file “phone.txt”
+which contains name and phone number pairs. The menu should have options:
+i. Search name and display phone number
+ii. Add a new name-phone number pair.
+
+*/
 import java.io.*;
 import java.util.Scanner;
 
@@ -48,7 +55,7 @@ public class Ex5A2{
 		System.out.println(fname);
 		if(!(f.isFile())){
 			System.out.println("Where is phone.txt?");
-			System.exit(0);		
+			System.exit(0);
 		}
 		while(true){
 			System.out.println("1.Search number");
@@ -56,13 +63,13 @@ public class Ex5A2{
 			System.out.println("3.Exit");
 			choice = in.nextInt();
 			switch(choice){
-				case 1: 
+				case 1:
 				System.out.println("Enter Name:");
 				Name = in.next();
 				System.out.println(getNum(Name));
 				break;
 
-				case 2: 
+				case 2:
 				System.out.println("Enter Name:");
 				Name = in.next();
 				System.out.println("Enter Number:");
@@ -75,6 +82,5 @@ public class Ex5A2{
 				break;
 			}
 		}
-		in.close();
 	}
 }

@@ -15,7 +15,6 @@ public class Ex3A1{
             ob[i].Accept();
             ob[i].Display();
          }
-         in.close();
      }
 }
 
@@ -35,6 +34,7 @@ class Employee{
          
          Scanner in = new Scanner(System.in);
          public Employee(int Employee,String Name,String Department,double Salary){
+             this.Id = Id;
              this.Name = Name;
              this.Department = Department;
              this.Salary = Salary;
